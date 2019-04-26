@@ -4,5 +4,43 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-family: 'Courier New', Courier, monospace;
 }
 /* write your parent styles in here for your App.js */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.char-info {
+  width: 650px;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+.char-card {
+  animation: fadein 2s;
+  font-family: Impact;
+  font-size: 1.25rem;
+  border: dashed #D7C078;
+  border-radius: 2rem;
+  padding-bottom: 25px;
+  color: #D7C078;
+  background: #8A2438;
+  transition: all .2s ease-in-out;
+}
+
+.char-card:hover {
+  transform: scale(1.1);
+}
+
+.char-card h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 2.5rem;
+}
