@@ -4,11 +4,8 @@ import './App.css';
 const StarWarsChars = props => {
   return (
     <div className="char-info">
-
       <div className="char-card">
-
           <h2>{props.charsProp.name} </h2> 
-
         <p>
           <strong>Birth Year:</strong> {props.charsProp.birth_year}
         </p>
@@ -31,7 +28,6 @@ const StarWarsChars = props => {
           <strong>Skin Color:</strong> {props.charsProp.skin_color}
         </p>
       </div>
-
     </div>
   );
 };
@@ -54,7 +50,6 @@ class App extends Component {
         skin_color: "",
       }
     };
-
   }
 
   componentDidMount() {
@@ -81,21 +76,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <h1 className="Header">React Wars</h1>
-
-
         <div className="char-list">
-
           {this.state.starwarsChars.map(charsFromMap => {
             return <StarWarsChars charsProp={charsFromMap} />
           })}
-
         </div>
-
-
       </div>
-
     );
   }
 }
