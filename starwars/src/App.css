@@ -6,3 +6,31 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.char-info {
+  width: 650px;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+.char-card {
+  animation: fadein 1s;
+  border: solid #D7C078;
+  border-radius: 2rem;
+  color: #D7C078;
+  background: #8A2438;
+  transition: all .2s ease-in-out;
+}
+
+.char-card:hover {
+  transform: scale(1.1);
+}

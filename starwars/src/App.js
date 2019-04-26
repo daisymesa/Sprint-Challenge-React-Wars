@@ -3,12 +3,12 @@ import './App.css';
 
 const StarWarsChars = props => {
   return (
-    <div className="char-card">
+    <div className="char-info">
 
-      <div className="char-info">
-        <p>
+      <div className="char-card">
+
           <h2>{props.charsProp.name} </h2> 
-        </p>
+
         <p>
           <strong>Birth Year:</strong> {props.charsProp.birth_year}
         </p>
